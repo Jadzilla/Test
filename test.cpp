@@ -12,7 +12,7 @@ int main()
     it's me, hi, i'm the problem it's me
 
         hello hello
-        
+        cout <<"Hello world";
 }
 
 
