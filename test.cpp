@@ -2,6 +2,23 @@
 
 using namespace std;
 
+class NullSphereBank {
+private:
+    struct Account { //Lahat to mga variables and functions na magagamit pag tinawag yung Null Sphere Bank
+        string first, last, middle, address, birthdate, accounttype;
+        char gender;
+        int pin, acnumber;
+        double balance;
+    };
+
+    vector<Account> accounts;
+
+    int generateAccountNumber() {
+        return rand() % 9000000000 + 1000000000;
+    }
+public:
+    void openaccount(); //Ibigsabihin nito na walang return value pag tinatawag siya always blank
+
 int main() {
     int choice;
 
